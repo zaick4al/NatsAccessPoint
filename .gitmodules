@@ -1,0 +1,4 @@
+[submodule "QtNats"]
+	path = QtNats
+	url = https://github.com/zaick4al/qtnats.git
+	branch = Qt6_CMake
