@@ -1,0 +1,11 @@
+[Unit]
+Description=Nats Access Point for client application
+After=network-online.target echoservice.socket
+
+[Service]
+ExecStart=/home/zas/projects/build-NatsAccessPoint-Desktop_Qt_6_5_3_GCC_64bit-Debug/DistibutionKit/NatsAccessPoint.sh --backend systemd
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
